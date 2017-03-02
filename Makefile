@@ -1,5 +1,5 @@
-obj-m := aufs.o
-aufs-objs := super.o
+obj-m := giffs.o
+giffs-objs := super.o
 
 CFLAGS_super.o := -DDEBUG
 
