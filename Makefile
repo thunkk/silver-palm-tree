@@ -1,7 +1,7 @@
-obj-m := giffs.o
-giffs-objs := super.o
+obj-m := testingfs.o
+testingfs-objs := testfs.o
 
-CFLAGS_super.o := -DDEBUG
+CFLAGS_testfs.o := -DDEBUG
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
